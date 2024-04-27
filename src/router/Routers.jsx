@@ -1,9 +1,9 @@
-import {createBrowserRouter} from 'react-router-dom'
+import {createBrowserRouter, Navigate} from 'react-router-dom'
 
 import App from '../App'
 import Login from "../pages/Login"
 import CadastroUsuarios from "../pages/CadastroUsuarios"
-import Dashboard from "../pages/Dashboad"
+import Dashboard from "../pages/Dashboard"
 import CadastroLocaisColeta from "../pages/CadastroLocaisColeta"
 import ListagemLocais from "../pages/ListagemLocais"
 
@@ -13,7 +13,7 @@ const PrivateRoute = ({children}) => {
   return isAutenticado ? children : <Navigate to="/login" />
 }
 
-const routers = createBrowserRouter([
+const rotas = createBrowserRouter([
    
     {
         path:"/login",
@@ -30,10 +30,9 @@ const routers = createBrowserRouter([
             <App/>
         </PrivateRoute>
         ),
-    errorElement: <div>Erro ao Carregar</div>,
     children: [
         {
-            path:"/",
+            path:"/Dashboard",
             element: <Dashboard />,
         },
         {
@@ -48,4 +47,4 @@ const routers = createBrowserRouter([
    }
 ])
 
-export default routers;
+export default rotas;

@@ -6,6 +6,7 @@ function CadastroUsuarios() {
    return(
      <div>
       
+      <h1>Cadastro usuário</h1>
      </div>
    )
   }
