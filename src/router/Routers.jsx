@@ -24,15 +24,15 @@ const rotas = createBrowserRouter([
         element: <CadastroUsuarios />,
     },
     {
-    path: "/",
-    element: (
-        <PrivateRoute>
+        path: "/",
+        element: (
+            <PrivateRoute>
             <App/>
         </PrivateRoute>
         ),
-    children: [
+        children: [
         {
-            path:"/Dashboard",
+            path:"/dashboard",
             element: <Dashboard />,
         },
         {
