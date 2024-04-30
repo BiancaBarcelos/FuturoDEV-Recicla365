@@ -1,0 +1,39 @@
+.divisaoPage{
+    display: flex;
+    width: 100%;
+    background-color: #E8DFCA;
+    & .colunaForm{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        & img {
+            margin-top: 50px;
+        }
+        & .btn{
+            width: 33%;
+        }
+        & .linhaBtn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+    }
+    & .colunaImgCadastroUsuario{
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        
+        & img{
+            top: 50%;
+            transform: translate(-25%, -47%);
+            position: absolute;
+        }
+
+    }
+
+}
