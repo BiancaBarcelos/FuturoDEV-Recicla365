@@ -1,0 +1,11 @@
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100px;
+    align-items: center;
+    
+    & .redesSociais img{
+        margin-left: 10px;
+    }
+}

@@ -1,12 +1,11 @@
 import { TextField } from "@mui/material";
 import "../../index.css"
+import "./style.css"
 import { useContext } from "react";
 import { useForm } from "react-hook-form";
 import { UsuariosContext } from "../../context/UsuariosContext";
 import { Link } from "react-router-dom";
-
-
-
+import Footer from "../../components/Footer";
 
 
 
@@ -23,14 +22,14 @@ function Login() {
 
    return(
 
-     <div>
-      <div>
+     <div className="divisaoPage">
+      <div className="colunaTxt">
         <img src="./src/assets/logo_recicla.svg" alt="" />
-        <form onSubmit={handleSubmit(fazerLogin)}>
+        <form className="containerCadastro" onSubmit={handleSubmit(fazerLogin)}>
           <div className="formRow">
             <TextField
                 id="email"
-                className="fullWidth"
+                className="width-3"
                 margin="normal" 
                 label="Login"  
                 type="email"
@@ -46,7 +45,7 @@ function Login() {
           <div className="formRow">
             <TextField
                 id="senha"
-                className="fullWidth"
+                className="width-3"
                 margin="normal" 
                 label="Senha"  
                 type="password"
@@ -59,13 +58,16 @@ function Login() {
                 })}
             />
           </div>
-          <div className="formRow">
-            <button type="submit">ENTRAR</button>
-            <Link to="/cadastroUsuarios">Criar Conta</Link>
+          <div>
+            <button className="btn btn1" type="submit">ENTRAR</button>
+            <Link className="btn2" to="/cadastroUsuarios">Criar Conta</Link>
           </div>
         </form>
+       
+        <Footer></Footer>        
+
       </div>
-      <div>
+      <div className="colunaImg">
         <img src="./src/assets/bg_login.png" alt="" />
       </div>
      </div>
