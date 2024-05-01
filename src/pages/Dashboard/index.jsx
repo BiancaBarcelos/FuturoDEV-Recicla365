@@ -18,7 +18,6 @@ function Dashboard() {
         </div>
         <div className="colunaCard">
           <CardDashboard/>
-          <CardDashboard/>
         </div>
       </section>
       <Footer/>
