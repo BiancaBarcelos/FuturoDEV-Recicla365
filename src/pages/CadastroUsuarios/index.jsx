@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 import "../../index.css"
 import "./style.css"
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { useForm } from "react-hook-form";
 import { UsuariosContext } from "../../context/UsuariosContext";
 import { Link } from "react-router-dom";
@@ -12,14 +12,35 @@ import Footer from "../../components/Footer";
 
  
 function CadastroUsuarios() {
-
+  const [logradouro,setLogradouro] = useState('')
+  const [bairro,setBairro] = useState('')
+  const [cidade,setCidade] = useState('')
+  const [estado,setEstado] = useState('')
   const {cadastrarUsuario} = useContext(UsuariosContext)
-  
-  const {register, handleSubmit, formState: {errors}} = useForm();
+  const {register, handleSubmit, setValue, getValues, formState: {errors}} = useForm();
 
-  async function registraUsuario(formValue) {
+  const registraUsuario = async (formValue) => {
     await cadastrarUsuario(formValue)
-    console.log(formValue)
+  }
+
+  const buscarCep = () => {
+    let cep = getValues('cep')
+
+    if(!!cep && cep.length == 8){
+      fetch(`https://viacep.com.br/ws/${cep}/json/`)
+      .then((res) => res.json())
+      .then(dados => {
+        setLogradouro(dados.logradouro)
+        setValue('logradouro', dados.logradouro)
+        setBairro(dados.bairro)
+        setValue('bairro', dados.bairro)
+        setCidade(dados.localidade)
+        setValue('cidade', dados.localidade)
+        setEstado(dados.uf)
+        setValue('estado', dados.uf)
+      })
+      .catch(error => console.log(error))
+    }
   }
 
    return(
@@ -28,33 +49,33 @@ function CadastroUsuarios() {
       <div className="colunaForm">
         <img src="./src/assets/logo_recicla.svg" alt="" />
         <form className="containerCadastro" onSubmit={handleSubmit(registraUsuario)}>
-        <div className="itensForm formRow">
-            <TextField
-                id="nome"
-                className="width-2"
+          <div className="itensForm formRow">
+              <TextField
+                  id="nome"
+                  className="width-2"
+                  margin="normal" 
+                  label="Nome" 
+                  variant="outlined"
+                  color={errors?.nome ? "error" : "success"}
+                  helperText={errors?.nome && `${errors.nome?.message}`}
+                  
+                  {...register("nome", {
+                      required: "Esse campo é obrigatório"
+                  })}
+              />
+              <TextField
+                id="cpf"
+                className="width-1"
                 margin="normal" 
-                label="Nome" 
+                label="CPF" 
                 variant="outlined"
-                color={errors?.nome ? "error" : "success"}
-                helperText={errors?.nome && `${errors.nome?.message}`}
+                color={errors?.cpf ? "error" : "success"}
+                helperText={errors?.cpf && `${errors.cpf?.message}`}
                 
-                {...register("nome", {
+                {...register("cpf", {
                     required: "Esse campo é obrigatório"
                 })}
             />
-            <TextField
-            id="cpf"
-            className="width-1"
-            margin="normal" 
-            label="CPF" 
-            variant="outlined"
-            color={errors?.cpf ? "error" : "success"}
-            helperText={errors?.cpf && `${errors.cpf?.message}`}
-            
-            {...register("cpf", {
-                required: "Esse campo é obrigatório"
-            })}
-        />
           </div>
           <div className="formRow">
             <TextField
@@ -128,18 +149,20 @@ function CadastroUsuarios() {
                 margin="normal" 
                 label="CEP" 
                 variant="outlined"
+                name="cep"
                 color={errors?.cep ? "error" : "success"}
                 helperText={errors?.cep && `${errors.cep?.message}`}
                 
                 {...register("cep", {
-                    required: "Esse campo é obrigatório"
+                    required: "Esse campo é obrigatório",
+                    onBlur: () => buscarCep()
                 })}
             />
             <TextField
                 id="numero"
                 className="width-1"
                 margin="normal" 
-                label="Nº" 
+                label="Nº"
                 variant="outlined"
                 color={errors?.numero ? "error" : "success"}
                 helperText={errors?.numero && `${errors.numero?.message}`}
@@ -158,8 +181,8 @@ function CadastroUsuarios() {
                 helperText={errors?.complemento && `${errors.complemento?.message}`}
                 
                 {...register("complemento", {
-                    required: "Esse campo é obrigatório"
-                })}
+                  required: "Esse campo é obrigatório"
+              })}
             />
 
           </div>
@@ -169,7 +192,10 @@ function CadastroUsuarios() {
                 id="logradouro"
                 className="width-3"
                 margin="normal" 
-                label="Logradouro" 
+                label="Logradouro"
+                name="logradouro" 
+                value={logradouro}
+                onChange={e => setLogradouro(e.target.value)}
                 variant="outlined"
                 color={errors?.logradouro ? "error" : "success"}
                 helperText={errors?.logradouro && `${errors.logradouro?.message}`}
@@ -184,7 +210,10 @@ function CadastroUsuarios() {
                 id="bairro"
                 className="width-1"
                 margin="normal" 
-                label="Bairro" 
+                label="Bairro"
+                name="bairro" 
+                value={bairro}
+                onChange={e => setBairro(e.target.value)}
                 variant="outlined"
                 color={errors?.bairro ? "error" : "success"}
                 helperText={errors?.bairro && `${errors.bairro?.message}`}
@@ -197,7 +226,10 @@ function CadastroUsuarios() {
                 id="cidade"
                 className="width-1"
                 margin="normal" 
-                label="Cidade" 
+                label="Cidade"
+                name="cidade" 
+                value={cidade}
+                onChange={e => setCidade(e.target.value)}
                 variant="outlined"
                 color={errors?.cidade ? "error" : "success"}
                 helperText={errors?.cidade && `${errors.cidade?.message}`}
@@ -210,7 +242,10 @@ function CadastroUsuarios() {
                 id="estado"
                 className="width-1"
                 margin="normal" 
-                label="Estado" 
+                label="Estado"
+                name="estado" 
+                value={estado}
+                onChange={e => setEstado(e.target.value)}
                 variant="outlined"
                 color={errors?.estado ? "error" : "success"}
                 helperText={errors?.estado && `${errors.estado?.message}`}

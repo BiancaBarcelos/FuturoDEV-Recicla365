@@ -5,6 +5,7 @@
     font-weight: 400;
     margin: 0;
     padding: 0;
+    color: #194D2E;
 }
 
 .btn {
@@ -37,12 +38,6 @@
         color: #3e7a55;
     }
 }
-
-
-
-
-
-
 .containerCadastro{
     max-width: 700px;
     width: 100%;
@@ -74,4 +69,12 @@
 .espacamentoPadraoInput {
     margin-top: 16px;
     margin-bottom: 8px;
+}
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin:auto;
+    & h1{
+        margin: 50px 0 30px;
+    }
 }
