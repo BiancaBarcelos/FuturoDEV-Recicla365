@@ -1,0 +1,19 @@
+.listaLocais {
+    width: 1000px;
+    height: 35px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #E8DFCA;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    & p {
+        font-size: 17px;
+    }
+    & .iconsAcao a {
+        margin-left: 10px;
+        & img {
+            width: 25px;
+        }
+    }
+}

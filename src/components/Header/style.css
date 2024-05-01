@@ -1,20 +1,22 @@
-.menu {
+.bgMenu {
     background-color: #E8DFCA;
-    color: #194D2E;
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    & ul {
+    padding: 0 40px;
+    & .menu {
+        height: 100px;
         display: flex;
-        gap: 40px;
-
-        & li {
-            list-style-type: none; 
+        justify-content: space-between;
+        align-items: center;
+        & ul {
+            display: flex;
+            gap: 40px;
+    
+            & li {
+                list-style-type: none; 
+            }
+        }
+        & a{
+            text-decoration: none;
         }
     }
-    & a{
-        text-decoration: none;
-        color: #FFFFFF;
-    }
+
 }

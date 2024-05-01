@@ -37,7 +37,7 @@ export const UsuariosContextProvider = ({children}) => {
           usuarioExiste = true
           if(usuario.senha == senha){
             localStorage.setItem("isAutenticado", true)
-            window.location.href = "/Dashboard"
+            window.location.href = "/dashboard"
             return
           }
 
@@ -74,32 +74,32 @@ export const UsuariosContextProvider = ({children}) => {
       return usuarioJaCadastrado
 
   }
-   function cadastrarUsuario(usuario){
+  function cadastrarUsuario(usuario){
 
-    try {
-      const documentoAtual = validarRegistro(usuario.cpf)
-      console.log('existe?',documentoAtual)
-      if (documentoAtual) {
-        alert("Usuário já cadastrado!")
-      }else {
-        fetch("http://localhost:3000/usuarios", {
-          method: "POST",
-          body: JSON.stringify(usuario),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        })
-        .then(() => { 
-          alert("Usuário cadastrado com sucesso!")
-          getUsuarios()
-        })
-        .catch(() => alert("Erro ao cadastrar usuário!"))
-        
-
-      }
-    } catch (error) {
+  try {
+    const documentoAtual = validarRegistro(usuario.cpf)
+    console.log('existe?',documentoAtual)
+    if (documentoAtual) {
+      alert("Usuário já cadastrado!")
+    }else {
+      fetch("http://localhost:3000/usuarios", {
+        method: "POST",
+        body: JSON.stringify(usuario),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .then(() => { 
+        alert("Usuário cadastrado com sucesso!")
+        getUsuarios()
+      })
+      .catch(() => alert("Erro ao cadastrar usuário!"))
       
+
     }
+  } catch (error) {
+    
+  }
       
 
   }

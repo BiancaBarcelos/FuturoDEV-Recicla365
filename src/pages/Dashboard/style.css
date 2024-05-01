@@ -1,0 +1,14 @@
+.dashboard {
+    background-color: #4F6F51;
+    height: 100vh;
+    .sessao {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        min-height: calc(100vh - 230px);
+        & .colunaCard {
+            display: flex;
+            gap: 40px;
+        }
+    }
+}

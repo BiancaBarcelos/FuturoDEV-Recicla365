@@ -1,0 +1,7 @@
+.cadastroLocais {
+    background-color: #4F6F51;
+    height: 100vh;
+    .sessaoCadastro {
+        margin-top: 30px;
+    }
+}

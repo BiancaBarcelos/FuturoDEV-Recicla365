@@ -1,11 +1,20 @@
 import "../../index.css"
+import "./style.css"
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 function CadastroLocaisColeta() {
 
   
    return(
-     <div>
-      <h1>Cadastro</h1>
+     <div className="cadastroLocais">
+      <Header/>
+      <section className="sessaoCadastro container">
+        <div>
+          
+        </div>
+      </section>
+      <Footer/>
      </div>
    )
   }

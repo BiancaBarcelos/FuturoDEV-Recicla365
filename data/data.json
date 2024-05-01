@@ -1,171 +1,71 @@
 {
   "usuarios": [
     {
-      "id": 1,
-      "nome": "Felipe",
-      "email": "felipe@email.com",
-      "senha": 123456
+      "nome": "bianca",
+      "cpf": "445566",
+      "sexo": "asd",
+      "email": "bianca@email.com",
+      "senha": "asd",
+      "cep": "88048468",
+      "numero": "9",
+      "complemento": "casa",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 1
     },
     {
-      "id": 2,
-      "nome": "Renata",
-      "email": "renata@email.com",
-      "senha": 123456
+      "nome": "Ton",
+      "cpf": "123",
+      "sexo": "asd",
+      "email": "ton@email.com",
+      "senha": "asd",
+      "cep": "88048468",
+      "numero": "9",
+      "complemento": "cs",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 2
     },
     {
-      "nome": "matheus",
-      "email": "matheus@email.com",
+      "nome": "xablau",
+      "cpf": "11155544466",
+      "sexo": "ET",
+      "email": "tste@teste.com",
       "senha": "123456",
+      "cep": "88048468",
+      "numero": "9",
+      "complemento": "123",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
       "id": 3
     },
     {
-      "nome": "andre",
-      "email": "andre@email.com",
-      "senha": "123456",
+      "nome": "asdasdasd",
+      "cpf": "1981",
+      "sexo": "asdasd",
+      "email": "asdasdasd@asdasdasd",
+      "senha": "asdasdasd",
+      "cep": "88048468",
+      "numero": "9",
+      "complemento": "asdasd",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
       "id": 4
-    },
-    {
-      "nome": "bruno",
-      "email": "bruno@email.com",
-      "senha": "123456",
-      "id": 5
-    },
-    {
-      "nome": "deyse",
-      "email": "deyse@email.com",
-      "senha": "123456",
-      "id": 6
-    },
-    {
-      "id": "6e96",
-      "nome": "Bianca",
-      "cpf": "12345678912",
-      "sexo": "Feminino",
-      "email": "bianca@email.com",
-      "senha": "123456",
-      "cep": "12345678",
-      "numero": "9",
-      "complemento": "casa",
-      "logradouro": "rua aqui",
-      "bairro": "Rio Tavares",
-      "cidade": "Florianópolis",
-      "estado": "SC"
-    },
-    {
-      "id": "0936",
-      "nome": "Bianca",
-      "cpf": "12345678912",
-      "sexo": "Feminino",
-      "email": "bianca@email.com",
-      "senha": "123456",
-      "cep": "12345678",
-      "numero": "9",
-      "complemento": "casa",
-      "logradouro": "rua aqui",
-      "bairro": "Rio Tavares",
-      "cidade": "Florianópolis",
-      "estado": "SC"
-    },
-    {
-      "id": "5c5f",
-      "nome": "Bianca",
-      "cpf": "12345678978",
-      "sexo": "Feminino",
-      "email": "bianca@email.com",
-      "senha": "123456",
-      "cep": "12345678",
-      "numero": "9",
-      "complemento": "cfascf",
-      "logradouro": "cfsa",
-      "bairro": "csdcs",
-      "cidade": "cfa",
-      "estado": "csd"
-    },
-    {
-      "id": "9ced",
-      "nome": "Bianca",
-      "cpf": "12345678978123",
-      "sexo": "Feminino",
-      "email": "bianca@email.com",
-      "senha": "123456",
-      "cep": "12345678",
-      "numero": "9",
-      "complemento": "cfascf",
-      "logradouro": "cfsa",
-      "bairro": "csdcs",
-      "cidade": "cfa",
-      "estado": "csd"
-    },
-    {
-      "id": "7d06",
-      "nome": "asdasda",
-      "cpf": "123",
-      "sexo": "",
-      "email": "",
-      "senha": "",
-      "cep": "",
-      "numero": "",
-      "complemento": "",
-      "logradouro": "",
-      "bairro": "",
-      "cidade": "",
-      "estado": ""
-    },
-    {
-      "id": "ac78",
-      "nome": "asdasda",
-      "cpf": "456",
-      "sexo": "",
-      "email": "",
-      "senha": "",
-      "cep": "",
-      "numero": "",
-      "complemento": "",
-      "logradouro": "",
-      "bairro": "",
-      "cidade": "",
-      "estado": ""
-    },
-    {
-      "id": "3c98",
-      "nome": "asdasda",
-      "cpf": "1232",
-      "sexo": "",
-      "email": "",
-      "senha": "",
-      "cep": "",
-      "numero": "",
-      "complemento": "",
-      "logradouro": "",
-      "bairro": "",
-      "cidade": "",
-      "estado": ""
-    },
-    {
-      "id": "8644",
-      "nome": "asdasda",
-      "cpf": "123456789",
-      "sexo": "",
-      "email": "",
-      "senha": "",
-      "cep": "",
-      "numero": "",
-      "complemento": "",
-      "logradouro": "",
-      "bairro": "",
-      "cidade": "",
-      "estado": ""
-    },
-    {
-      "id": "06f7",
-      "nome": "asdasd",
-      "cpf": "123456"
-    },
-    {
-      "id": "4a7a",
-      "nome": "asdasd",
-      "cpf": "4565"
     }
   ],
-  "locaisColeta": []
+  "locaisColeta": [
+    {
+      "nomeLocal": "Hipper",
+      "id": 1,
+      "coordenadas": " -27.66549 -48.51524 -27.66127 -48.51357"
+    }
+  ]
 }
