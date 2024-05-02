@@ -7,7 +7,6 @@ export const UsuariosContextProvider = ({children}) => {
 
   useEffect(() => {
     getUsuarios()
-    //localStorage.setItem("idUsuarioLogado", 66)
   }, [])
 
   function getUsuarios(){
@@ -76,36 +75,61 @@ export const UsuariosContextProvider = ({children}) => {
   }
   function cadastrarUsuario(usuario){
 
-  try {
-    const documentoAtual = validarRegistro(usuario.cpf)
-    console.log('existe?',documentoAtual)
-    if (documentoAtual) {
-      alert("Usuário já cadastrado!")
-    }else {
-      fetch("http://localhost:3000/usuarios", {
-        method: "POST",
-        body: JSON.stringify(usuario),
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      })
-      .then(() => { 
-        alert("Usuário cadastrado com sucesso!")
-        getUsuarios()
-      })
-      .catch(() => alert("Erro ao cadastrar usuário!"))
-      
+    try {
+      const documentoAtual = validarRegistro(usuario.cpf)
+      console.log('existe?',documentoAtual)
+      if (documentoAtual) {
+        alert("Usuário já cadastrado!")
+      }else {
+        fetch("http://localhost:3000/usuarios", {
+          method: "POST",
+          body: JSON.stringify(usuario),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        })
+        .then(() => { 
+          alert("Usuário cadastrado com sucesso!")
+          getUsuarios()
+        })
+        .catch(() => alert("Erro ao cadastrar Usuário!"))
+        
 
-    }
-  } catch (error) {
+      }
+    } catch (error) {
     
+    }
   }
-      
 
+  function editarUsuario(usuario, id){
+    fetch("http://localhost:3000/usuarios/" + id, {
+      method: "PUT",
+      body: JSON.stringify(usuario),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+    .then(() => { 
+      alert("Usuário alterado com sucesso!")
+      getUsuarios()
+    })
+    .catch(() => alert("Erro ao alterar Usuário!"))
   }
+
+  function removerUsuario(id){
+    fetch("http://localhost:3000/usuarios/" + id, {
+      method: "DELETE",
+    })
+    .then(() => { 
+      alert("Usuário deletado com sucesso!")
+      getUsuarios()
+    })
+    .catch(() => alert("Erro ao deletar Usuário!"))
+  }
+
 
   return (
-    <UsuariosContext.Provider value={{usuarios, login, cadastrarUsuario, getUsuarioPorId, logout}}>
+    <UsuariosContext.Provider value={{usuarios, login, editarUsuario, removerUsuario, cadastrarUsuario, getUsuarioPorId, logout}}>
       {children}
     </UsuariosContext.Provider>
   )

@@ -4,6 +4,7 @@ import './index.css'
 import { RouterProvider } from 'react-router-dom'
 import rotas from './router/Routers.jsx'
 import { UsuariosContextProvider } from './context/UsuariosContext.jsx'
+import { LocaisColetaContextProvider } from './context/LocaisColetaContext.jsx'
 
 
 
@@ -11,7 +12,10 @@ import { UsuariosContextProvider } from './context/UsuariosContext.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
 
         <UsuariosContextProvider>
-                <RouterProvider router={rotas}>
-                </RouterProvider>
+                <LocaisColetaContextProvider>
+                        <RouterProvider router={rotas}>
+
+                        </RouterProvider>
+                </LocaisColetaContextProvider>
         </UsuariosContextProvider>
 )
