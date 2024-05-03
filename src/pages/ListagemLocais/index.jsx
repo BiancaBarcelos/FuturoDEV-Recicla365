@@ -13,7 +13,6 @@ function ListagemLocais() {
       <section className="lista container">
         <div>
           <ListaLocaisColeta/>
-          <ListaLocaisColeta/>
         </div>
       </section>
       <Footer/>

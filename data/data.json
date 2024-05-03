@@ -48,9 +48,107 @@
   ],
   "locaisColeta": [
     {
-      "nomeLocal": "Hipper",
-      "id": 1,
-      "coordenadas": " -27.66549 -48.51524 -27.66127 -48.51357"
+      "usuario": "2",
+      "nomeLocal": "Pedrita",
+      "descricao": "Em frente a pedrita",
+      "cep": "88048460",
+      "numero": "5",
+      "complemento": "aca",
+      "logradouro": "Servidão Knussen",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "adas",
+      "id": 1
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "vxv s",
+      "descricao": "vsvs",
+      "cep": "88048660",
+      "numero": "541",
+      "complemento": "adc",
+      "logradouro": "Servidão Recanto da Araponga",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "cc",
+      "id": 2
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "asdasdas",
+      "descricao": "asdasda",
+      "cep": "88048468",
+      "numero": "9",
+      "complemento": "asdasd",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "asdasda",
+      "id": 3
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "asdasd",
+      "descricao": "asdasd",
+      "cep": "88048468",
+      "numero": "55",
+      "complemento": "asdasd",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "123123",
+      "id": 4
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "asdasdasd",
+      "descricao": "65654654",
+      "cep": "88048462",
+      "numero": "1321",
+      "complemento": "516511",
+      "logradouro": "Servidão Alexandrina Marcelino Martins",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "asdasda",
+      "id": 5
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "6546541",
+      "descricao": "asdasda",
+      "cep": "88048468",
+      "numero": "55555",
+      "complemento": "asdasd",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "asdasd",
+      "id": 6
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "asdasdasd",
+      "descricao": "qweqweqwe",
+      "cep": "88048468",
+      "numero": "123",
+      "complemento": "asdasd",
+      "logradouro": "Servidão Cana da Índia",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "qweqweqwe",
+      "residuos": [
+        "Plástico",
+        "Metal",
+        "Orgânico"
+      ],
+      "id": 7
     }
   ]
 }
