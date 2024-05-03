@@ -78,3 +78,8 @@
         margin: 50px 0 30px;
     }
 }
+.selectMultiple #demo-multiple-chip{
+    height: 32px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}

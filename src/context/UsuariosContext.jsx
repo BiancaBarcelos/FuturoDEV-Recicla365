@@ -36,6 +36,7 @@ export const UsuariosContextProvider = ({children}) => {
           usuarioExiste = true
           if(usuario.senha == senha){
             localStorage.setItem("isAutenticado", true)
+            localStorage.setItem("idUsuario", usuario.id)
             window.location.href = "/dashboard"
             return
           }
@@ -57,6 +58,7 @@ export const UsuariosContextProvider = ({children}) => {
 
   function logout() {
     localStorage.setItem("isAutenticado", false)
+    localStorage.removeItem("idUsuario")
     window.location.href = "/login"
   }
 

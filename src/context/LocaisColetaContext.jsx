@@ -1,9 +1,19 @@
 import { createContext, useEffect, useState } from "react";
 
+
+
 export const LocaisColetaContext = createContext()
 
 export const LocaisColetaContextProvider = ({children}) => {
-    const [locaisColeta, setLocaisColeta] = useState([])
+  const [locaisColeta, setLocaisColeta] = useState([])
+  const residuos = [
+    'Vidro',
+    'Plástico',
+    'Metal',
+    'Orgânico',
+    'Papel',
+    'Baterias'
+  ];
 
     useEffect(() => {
         getLocaisColeta()
@@ -23,7 +33,7 @@ export const LocaisColetaContextProvider = ({children}) => {
         .catch(erro => console.log(erro))
       }
     
-    function cadastrarLocais(local){
+    function cadastrarLocal(local){
         try {
             fetch("http://localhost:3000/locaisColeta", {
                 method: "POST",
@@ -35,6 +45,7 @@ export const LocaisColetaContextProvider = ({children}) => {
             .then(() => {
                 alert("Local de Coleta cadastrado com sucesso!")
                 getLocaisColeta()
+                window.location.href = "/dashboard"
             })
             .catch(() => alert("Erro ao cadastrar Local de Coleta!"))
         } catch (error) {
@@ -75,7 +86,7 @@ export const LocaisColetaContextProvider = ({children}) => {
         
 
     return (
-        <LocaisColetaContext.Provider value={{locaisColeta, getLocaisColeta, getLocalColetaPorId, editarLocal, cadastrarLocais, removerLocal}}>
+        <LocaisColetaContext.Provider value={{residuos, locaisColeta, getLocaisColeta, getLocalColetaPorId, editarLocal, cadastrarLocal, removerLocal}}>
           {children}
         </LocaisColetaContext.Provider>
       )

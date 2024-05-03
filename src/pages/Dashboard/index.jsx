@@ -14,7 +14,6 @@ function Dashboard() {
       <section className="sessao container">
         <div>
           <ListaLocaisColeta/>
-          <ListaLocaisColeta/>
         </div>
         <div className="colunaCard">
           <CardDashboard/>

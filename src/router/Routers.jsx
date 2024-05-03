@@ -9,6 +9,7 @@ import ListagemLocais from "../pages/ListagemLocais"
 
 let isAutenticado = JSON.parse(localStorage.getItem("isAutenticado")) || false
 
+console.log(isAutenticado)
 const PrivateRoute = ({children}) => {
   return isAutenticado ? children : <Navigate to="/login" />
 }
@@ -27,8 +28,8 @@ const rotas = createBrowserRouter([
         path: "/",
         element: (
             <PrivateRoute>
-            <App/>
-        </PrivateRoute>
+                <App/>
+            </PrivateRoute>
         ),
         children: [
         {
