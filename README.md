@@ -4,12 +4,12 @@ O Recicla365 é uma plataforma que facilita o gerenciamento de resíduos e o ace
 
 ### Tópicos
 
-* [Demonstração de Uso](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#demonstra%C3%A7%C3%A3o-de-uso)
+* [Demonstração de Uso](#Demonstração-de-Uso)
 * [Funcionalidades](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#link](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#funcionalidades))
 * [Ferramentas Utiliadas](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#link](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#ferramentas-utilizadas))
 * [Instalação Dependências](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#instala%C3%A7%C3%A3o-depend%C3%AAncias)
 * [Executar Projeto](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#executar-projeto)
-* [Usuários Cadastrados](https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/edit/develop/README.md#usu%C3%A1rios-cadastrados-para-teste)
+* [Usuários Cadastrados](#Usuários-Cadastrados)
 
 
 
