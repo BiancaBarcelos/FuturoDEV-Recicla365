@@ -6,6 +6,7 @@ import CadastroUsuarios from "../pages/CadastroUsuarios"
 import Dashboard from "../pages/Dashboard"
 import CadastroLocaisColeta from "../pages/CadastroLocaisColeta"
 import ListagemLocais from "../pages/ListagemLocais"
+import ListagemUsuarios from '../pages/ListagemUsuarios'
 
 let isAutenticado = JSON.parse(localStorage.getItem("isAutenticado")) || false
 
@@ -43,7 +44,11 @@ const rotas = createBrowserRouter([
         {
             path:"/locais", 
             element: <ListagemLocais />,
-        }    
+        },
+        {
+            path:"/listagemUsuarios", 
+            element: <ListagemUsuarios />,
+        }   
     ]
    }
 ])

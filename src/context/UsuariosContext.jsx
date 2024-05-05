@@ -1,12 +1,16 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { LocaisColetaContext } from "./LocaisColetaContext";
 
 export const UsuariosContext = createContext()
 
 export const UsuariosContextProvider = ({children}) => {
   const [usuarios, setUsuarios] = useState([])
+  const {locaisColeta, getLocaisColeta} = useContext(LocaisColetaContext)
+
 
   useEffect(() => {
     getUsuarios()
+    getLocaisColeta()
   }, [])
 
   function getUsuarios(){
@@ -93,6 +97,8 @@ export const UsuariosContextProvider = ({children}) => {
         .then(() => { 
           alert("Usuário cadastrado com sucesso!")
           getUsuarios()
+          window.location.href = "/login"
+
         })
         .catch(() => alert("Erro ao cadastrar Usuário!"))
         
@@ -114,19 +120,32 @@ export const UsuariosContextProvider = ({children}) => {
     .then(() => { 
       alert("Usuário alterado com sucesso!")
       getUsuarios()
+      window.location.href = "/listagemUsuarios"
+
     })
     .catch(() => alert("Erro ao alterar Usuário!"))
   }
 
   function removerUsuario(id){
-    fetch("http://localhost:3000/usuarios/" + id, {
-      method: "DELETE",
-    })
-    .then(() => { 
-      alert("Usuário deletado com sucesso!")
-      getUsuarios()
-    })
-    .catch(() => alert("Erro ao deletar Usuário!"))
+    const identificador = id.toString()
+    let locaisVinculados = locaisColeta.find(o => o.usuario === identificador);
+
+    if (!!locaisVinculados) {
+      
+      alert("Existem locais de coleta vinculados a esse usuário, exclusão não executada!!")
+    } else {
+      fetch("http://localhost:3000/usuarios/" + id, {
+        method: "DELETE",
+      })
+      .then(() => {
+        alert("Usuário deletado com sucesso!")
+        getUsuarios()
+        window.location.href = "/listagemUsuarios"
+  
+      })
+      .catch(() => alert("Erro ao deletar Usuário!"))
+    }
+
   }
 
 

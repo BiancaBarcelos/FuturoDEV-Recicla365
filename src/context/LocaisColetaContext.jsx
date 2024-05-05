@@ -61,6 +61,8 @@ export const LocaisColetaContextProvider = ({children}) => {
             .then(() => {
                 alert("Local de Coleta deletado com sucesso!")
                 getLocaisColeta()
+                window.location.href = "/locais"
+
             })
             .catch(() => alert("Erro ao deletar Local de Coleta!"))
         } catch (error) {
@@ -80,6 +82,8 @@ export const LocaisColetaContextProvider = ({children}) => {
         .then(() => { 
           alert("Local de Coleta alterado com sucesso!")
           getLocaisColeta()
+          window.location.href = "/locais"
+
         })
         .catch(() => alert("Erro ao alterar Local de Coleta!"))
       }

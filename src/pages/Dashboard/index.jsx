@@ -12,8 +12,8 @@ function Dashboard() {
      <div className="dashboard">
       <Header/>
       <section className="sessao container">
-        <div>
-          <ListaLocaisColeta/>
+        <div className="colunaLista">
+          <ListaLocaisColeta pageFrom="dashboard"/>
         </div>
         <div className="colunaCard">
           <CardDashboard/>

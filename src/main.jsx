@@ -11,11 +11,11 @@ import { LocaisColetaContextProvider } from './context/LocaisColetaContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
-        <UsuariosContextProvider>
-                <LocaisColetaContextProvider>
+        <LocaisColetaContextProvider>
+                <UsuariosContextProvider>
                         <RouterProvider router={rotas}>
 
                         </RouterProvider>
-                </LocaisColetaContextProvider>
-        </UsuariosContextProvider>
+                </UsuariosContextProvider>
+        </LocaisColetaContextProvider>
 )

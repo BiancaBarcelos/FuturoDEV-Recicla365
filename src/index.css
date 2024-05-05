@@ -21,7 +21,7 @@
     cursor: pointer;
 }
 .btn1 {
-    color: #FFFFFF;
+    color: #E8DFCA;
     background-color: #194D2E;
 
     &:hover{
@@ -66,6 +66,10 @@
     width: 100%;
     flex: 1;
 }
+.width-4{
+    width: 50%;
+    flex: 1;
+}
 .espacamentoPadraoInput {
     margin-top: 16px;
     margin-bottom: 8px;
@@ -82,4 +86,16 @@
     height: 32px;
     padding-top: 14px;
     padding-bottom: 10px;
+}
+.marginAuto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tituloPage {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    color: #E8DFCA;
+    padding: 5px 0 20px;
+    transform: translateX(-25px);
 }

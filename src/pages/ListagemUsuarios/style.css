@@ -3,6 +3,6 @@
     height: 100vh;
     .lista {
         min-height: calc(100vh - 230px);
-        margin-top: 30px;        
+        margin-top: 30px;
     }
 }
