@@ -2,9 +2,9 @@ import "../../index.css"
 import "./style.css"
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import ListaLocaisColeta from "../../components/ListaLocaisColeta";
+import ListaUsuarios from "../../components/ListaUsuarios";
 
-function ListagemLocais() {
+function ListagemUsuarios() {
 
   
    return(
@@ -12,8 +12,8 @@ function ListagemLocais() {
       <Header/>
       <section className="lista container">
         <div>
-          <h2 className="tituloPage">Locais de Coleta</h2>
-          <ListaLocaisColeta/>
+          <h2 className="tituloPage">Usuários Cadastrados</h2>
+          <ListaUsuarios/>
         </div>
       </section>
       <Footer/>
@@ -21,4 +21,4 @@ function ListagemLocais() {
    )
   }
 
-export default ListagemLocais;
+export default ListagemUsuarios;

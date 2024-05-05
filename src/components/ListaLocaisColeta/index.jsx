@@ -3,13 +3,19 @@ import "../../index.css"
 import "./style.css"
 import { useContext } from "react";
 import { LocaisColetaContext } from "../../context/LocaisColetaContext";
+import ModalForm from "../ModalForm";
+import { Button } from "@mui/material";
 
-function ListaLocaisColeta() {
+function ListaLocaisColeta({pageFrom}) {
 
-   const {locaisColeta} = useContext(LocaisColetaContext)
+   const {locaisColeta, removerLocal} = useContext(LocaisColetaContext)
+
+   const deletaLocal = async(localColeta)=>{
+      await removerLocal(localColeta)
+    }
 
    return(
-    <div>
+    <>
       {
          locaisColeta.map(localColeta => {
             
@@ -19,24 +25,26 @@ function ListaLocaisColeta() {
                   <div>
                      {
                         localColeta.residuos && localColeta.residuos.map((residuo,index)=>{
-                           console.log(index)
                            return(
-                              <span key={localColeta.id}>{residuo} {(localColeta.residuos.length - 1) !== index ? " | " : ""}</span>
+                              <span key={`${localColeta.id}-${residuo}`}>{residuo} {(localColeta.residuos.length - 1) !== index ? " | " : ""}</span>
                            )
                         })
                      }
                   </div>
-                  <div className="iconsAcao">
-                     <a href=""><img src="./src/assets/lupa.png" alt="" /></a>
-                     <a href=""><img src="./src/assets/editar.png" alt="" /></a>
-                     <a href=""><img src="./src/assets/lixeira.png" alt="" /></a>
-                  </div>
+                  {
+                     pageFrom !== "dashboard" && (
+                        <div className="iconsAcao">
+                           <ModalForm form="local" dado={localColeta} acao="editar" id={localColeta.id}/>
+                           <Button onClick={() => {deletaLocal(localColeta.id)}}><img src="./src/assets/lixeira.png" alt="" /></Button>
+                        </div>
+                     )
+                  }
                </div>
             )
          })
       }
       
-    </div>
+    </>
    )
   }
 

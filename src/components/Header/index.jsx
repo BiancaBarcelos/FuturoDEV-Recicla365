@@ -15,6 +15,7 @@ function Header(){
                 <div><Link to="/dashboard"><img src="./src/assets/logo_recicla.svg" alt="" /></Link></div>
                 <nav>
                     <ul>
+                        <li><Link to="/listagemUsuarios">USUÁRIOS</Link></li>
                         <li><Link to="/locais">LOCAIS DE COLETA</Link></li>
                         <li><Link to="/cadastrolocais">CADASTRAR LOCAIS</Link></li>
                         <li><Link onClick={logout}>SAIR</Link></li>

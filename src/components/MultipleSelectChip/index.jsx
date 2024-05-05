@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -8,7 +7,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import Chip from '@mui/material/Chip';
 import "../../index.css"
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 
 
@@ -31,10 +30,9 @@ function getStyles(residuo, personName, theme) {
   };
 }
 
-export default function MultipleSelectChip({setResiduosAceitos,residuos,nomeCampo}) {
+export default function MultipleSelectChip({residuosAceitos,setResiduosAceitos,residuos,nomeCampo}) {
   const theme = useTheme();
-  const [personName, setPersonName] = React.useState([]);
- 
+  const [personName, setPersonName] = useState(residuosAceitos && residuosAceitos.length > 0 ? residuosAceitos : []);
   const handleChange = (event) => {
     const {
       target: { value },
