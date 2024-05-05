@@ -6,7 +6,7 @@ O Recicla365 é uma plataforma que facilita o gerenciamento de resíduos e o ace
 
 * [Demonstração de Uso](#Demonstração-de-Uso)
 * [Funcionalidades](#Funcionalidades)
-* [Ferramentas Utiliadas](#Ferramentas-Utiliadas)
+* [Ferramentas Utilizadas](#Ferramentas-Utilizadas)
 * [Instalação Dependências](#Instalação-Dependências)
 * [Executar Projeto](#Executar-Projeto)
 * [Usuários Cadastrados](#Usuários-Cadastrados)
