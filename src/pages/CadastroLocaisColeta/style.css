@@ -1,0 +1,17 @@
+.cadastroLocais {
+    background-color: #4F6F51;
+    .btn {
+        margin: 10px auto;
+    }
+    .sessaoCadastro {
+        min-height: calc(100vh - 200px);
+        display: flex;
+        align-items: center;
+        form {
+            background-color: #E8DFCA;
+            padding: 30px;
+            width: fit-content;
+            border-radius: 20px;
+        }
+    }
+}

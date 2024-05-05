@@ -1,0 +1,26 @@
+.bgMenu {
+    background-color: #E8DFCA;
+    padding: 0 40px;
+    & .menu {
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        & ul {
+            display: flex;
+            gap: 40px;
+    
+            & li {
+                list-style-type: none; 
+            }
+        }
+        & a{
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: #8a8a8a;
+            }
+        }
+    }
+
+}

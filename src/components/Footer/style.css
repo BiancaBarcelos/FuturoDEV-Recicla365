@@ -1,0 +1,16 @@
+.bgRodape{
+    background-color: #E8DFCA;
+    padding: 0 40px;
+    width: -webkit-fill-available;
+    .rodape{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        
+        & .redesSociais img{
+            margin-left: 10px;
+        }
+    }
+}

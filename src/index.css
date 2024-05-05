@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #194D2E;
+}
+
+.btn {
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: block;
+    width: fit-content;
+    margin: 50px 0;
+    transition: background-color .3s ease-in-out;
+    border: 0;
+    cursor: pointer;
+}
+.btn1 {
+    color: #E8DFCA;
+    background-color: #194D2E;
+
+    &:hover{
+        background-color: #3e7a55;
+    }
+    &:active{
+        background-color: #13241A;
+    }
+}
+.btn2 {
+    text-decoration: none;
+    color: #194D2E;
+    &:hover{
+        color: #3e7a55;
+    }
+}
+.containerCadastro{
+    max-width: 700px;
+    width: 100%;
+    margin:auto;
+    & h1{
+        margin: 50px 0 30px;
+    }
+}
+.formRow{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: flex-start;
+    .inputDefaultConf{
+        margin-top: 16px;
+        margin-bottom: 8px;
+    }
+}
+.width-1{
+    width: 33%;
+}
+.width-2{
+    width: 66%;
+}
+.width-3{
+    width: 100%;
+    flex: 1;
+}
+.width-4{
+    width: 50%;
+    flex: 1;
+}
+.espacamentoPadraoInput {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.container{
+    max-width: 1500px;
+    width: 100%;
+    margin:auto;
+    & h1{
+        margin: 50px 0 30px;
+    }
+}
+.selectMultiple #demo-multiple-chip{
+    height: 32px;
+    padding-top: 14px;
+    padding-bottom: 10px;
+}
+.marginAuto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tituloPage {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    color: #E8DFCA;
+    padding: 5px 0 20px;
+    transform: translateX(-25px);
+}

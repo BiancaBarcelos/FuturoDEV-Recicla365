@@ -1,0 +1,33 @@
+.divisaoPage{
+    display: flex;
+    width: 100%;
+    background-color: #E8DFCA;
+    & .colunaTxt{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        & img {
+            margin-top: 50px;
+        }
+        & .btn{
+            width: 100%;
+        }
+    }
+    & .colunaImg{
+        width: 50%;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+        
+        & img{
+            top: 50%;
+            transform: translate(-25%, -47%);
+            position: absolute;
+        }
+
+    }
+
+}

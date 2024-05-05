@@ -1,0 +1,178 @@
+{
+  "usuarios": [
+    {
+      "nome": "Ton",
+      "cpf": "33439964086",
+      "sexo": "Masculino",
+      "dataNascimento": "23/04/1998",
+      "email": "ton@email.com",
+      "senha": "123",
+      "cep": "88048000",
+      "numero": "99",
+      "complemento": "cs",
+      "logradouro": "Rodovia Francisco Magno Vieira",
+      "bairro": "Costeira do Pirajubaé",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 1
+    },
+    {
+      "nome": "Bianca",
+      "cpf": "21486349099",
+      "sexo": "Feminino",
+      "dataNascimento": "24/01/1991",
+      "email": "bia@email.com",
+      "senha": "123",
+      "cep": "88048000",
+      "numero": "99",
+      "complemento": "cs",
+      "logradouro": "Rodovia Francisco Magno Vieira",
+      "bairro": "Costeira do Pirajubaé",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 2
+    },
+    {
+      "nome": "Bruno",
+      "cpf": "75265095004",
+      "sexo": "Masculino",
+      "dataNascimento": "24/12/1998",
+      "email": "bruno@email.com",
+      "senha": "123",
+      "cep": "88048000",
+      "numero": "99",
+      "complemento": "cs",
+      "logradouro": "Rodovia Francisco Magno Vieira",
+      "bairro": "Costeira do Pirajubaé",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 3
+    },
+    {
+      "nome": "Cleiton",
+      "cpf": "10435516035",
+      "sexo": "Masculino",
+      "dataNascimento": "24/12/1990",
+      "email": "cleiton@email.com",
+      "senha": "123",
+      "cep": "88048000",
+      "numero": "99",
+      "complemento": "cs",
+      "logradouro": "Rodovia Francisco Magno Vieira",
+      "bairro": "Costeira do Pirajubaé",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 4
+    },
+    {
+      "nome": "Rodolfo",
+      "cpf": "23679328087",
+      "sexo": "Masculino",
+      "dataNascimento": "24/12/1980",
+      "email": "rodolfo@email.com",
+      "senha": "123",
+      "cep": "88048000",
+      "numero": "99",
+      "complemento": "cs",
+      "logradouro": "Rodovia Francisco Magno Vieira",
+      "bairro": "Costeira do Pirajubaé",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 5
+    },
+    {
+      "nome": "Renata",
+      "cpf": "55371262067",
+      "sexo": "Feminino",
+      "dataNascimento": "04/04/1986",
+      "email": "renata@email.com",
+      "senha": "123",
+      "cep": "88048422",
+      "numero": "10",
+      "complemento": "apto",
+      "logradouro": "Rua Cecília Jacinta de Jesus",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 6
+    }
+  ],
+  "locaisColeta": [
+    {
+      "usuario": "2",
+      "nomeLocal": "Pedrita",
+      "descricao": "perto ponto de ônibus",
+      "cep": "88048462",
+      "numero": "1321",
+      "complemento": "fundos",
+      "logradouro": "Servidão Alexandrina Marcelino Martins",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "-27.652599,-48.4807625",
+      "residuos": [
+        "Plástico",
+        "Orgânico"
+      ],
+      "id": 1
+    },
+    {
+      "usuario": "2",
+      "nomeLocal": "Pedrita 2",
+      "descricao": "perto da confeitaria Charlie",
+      "cep": "88063300",
+      "numero": "0",
+      "complemento": "conveniencia",
+      "logradouro": "Avenida Campeche",
+      "bairro": "Campeche",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "-27.652599,-48.4807625",
+      "residuos": [
+        "Vidro",
+        "Metal",
+        "Plástico",
+        "Orgânico"
+      ],
+      "id": 2
+    },
+    {
+      "usuario": "6",
+      "nomeLocal": "Escola Jovem",
+      "descricao": "Ao lado da escola",
+      "cep": "88054010",
+      "numero": "s/n",
+      "complemento": "comércio",
+      "logradouro": "Avenida das Nações",
+      "bairro": "Canasvieiras",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "-27.4322621,-48.4583119",
+      "residuos": [
+        "Baterias",
+        "Papel",
+        "Orgânico"
+      ],
+      "id": 3
+    },
+    {
+      "usuario": "6",
+      "nomeLocal": "Capela",
+      "descricao": "Próximo a Capela São Luiz Gonzaga (Igreja de Pedra)",
+      "cep": "88048300",
+      "numero": "1554",
+      "complemento": "ao lado da rodovia",
+      "logradouro": "Rodovia Doutor Antônio Luiz Moura Gonzaga",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "-27.6469681,-48.4781144",
+      "residuos": [
+        "Vidro",
+        "Orgânico",
+        "Metal"
+      ],
+      "id": 4
+    }
+  ]
+}
