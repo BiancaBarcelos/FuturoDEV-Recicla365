@@ -79,6 +79,22 @@
       "cidade": "Florianópolis",
       "estado": "SC",
       "id": 5
+    },
+    {
+      "nome": "Renata",
+      "cpf": "55371262067",
+      "sexo": "Feminino",
+      "dataNascimento": "04/04/1986",
+      "email": "renata@email.com",
+      "senha": "123",
+      "cep": "88048422",
+      "numero": "10",
+      "complemento": "apto",
+      "logradouro": "Rua Cecília Jacinta de Jesus",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "id": 6
     }
   ],
   "locaisColeta": [
@@ -121,7 +137,7 @@
       "id": 2
     },
     {
-      "usuario": "1",
+      "usuario": "6",
       "nomeLocal": "Escola Jovem",
       "descricao": "Ao lado da escola",
       "cep": "88054010",
@@ -134,9 +150,29 @@
       "coordenadas": "-27.4322621,-48.4583119",
       "residuos": [
         "Baterias",
-        "Papel"
+        "Papel",
+        "Orgânico"
       ],
       "id": 3
+    },
+    {
+      "usuario": "6",
+      "nomeLocal": "Capela",
+      "descricao": "Próximo a Capela São Luiz Gonzaga (Igreja de Pedra)",
+      "cep": "88048300",
+      "numero": "1554",
+      "complemento": "ao lado da rodovia",
+      "logradouro": "Rodovia Doutor Antônio Luiz Moura Gonzaga",
+      "bairro": "Rio Tavares",
+      "cidade": "Florianópolis",
+      "estado": "SC",
+      "coordenadas": "-27.6469681,-48.4781144",
+      "residuos": [
+        "Vidro",
+        "Orgânico",
+        "Metal"
+      ],
+      "id": 4
     }
   ]
 }
