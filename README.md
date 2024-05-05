@@ -41,12 +41,27 @@ https://github.com/BiancaBarcelos/FuturoDEV-Recicla365/assets/136381822/1db9a11e
 
 
  ## Instalação Dependências
- 
+
+React e Vite
 ```
 npm install
 ```
-
-
+React Hook Form
+```
+npm i react-hook-form
+```
+React Router Dom
+```
+npm i react-router-dom
+```
+Json Server
+```
+npm i json-server@0.17.0
+```
+Material UI
+```
+npm i @mui/material @emotion/react @emotion/styled @mui/lab @mui/x-date-pickers
+```
 
  ## Executar Projeto
 
@@ -58,7 +73,7 @@ npm run dev
 ```
  Para executar o Json Server
 ```
-npm run server
+npm run json-server --watch ./data/data.json
 ```
 
 
